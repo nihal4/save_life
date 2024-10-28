@@ -1,0 +1,155 @@
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f7f3; /* Light gray background */
+    color: #333; /* Dark text for readability */
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(135deg, #283d3b, #197278); /* Gradient from dark green to teal */
+    color: #f9f7f3; /* Light gray text */
+    text-align: center;
+    padding: 60px 20px; /* Increased padding for spacious look */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+    border-radius: 0 0 30px 30px; /* Rounded corners */
+}
+
+header h1 {
+    font-size: 2.8em; /* Larger title */
+    margin-bottom: 15px; /* Increased margin */
+}
+
+header p {
+    font-size: 1.3em; /* Larger subtitle */
+    margin-top: 0;
+}
+
+/* Section Styling */
+section {
+    margin: 30px auto; /* Increased margin */
+    padding: 40px; /* Increased padding */
+    max-width: 900px;
+    background: linear-gradient(135deg, #ffffff, #e0e0e0); /* Gradient from white to light gray */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px); /* Hover effect */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); /* Enhanced hover shadow */
+}
+
+/* Section Titles */
+h2 {
+    font-size: 2.2em; /* Larger subheadings */
+    margin-bottom: 20px;
+    color: #197278; /* Teal for headings */
+    border-bottom: 3px solid #598392; /* Muted blue border */
+    display: inline-block;
+    padding-bottom: 10px; /* Padding for separation */
+}
+
+/* Progress Bar */
+#progress-bar-container {
+    width: 100%;
+    background-color: #e0e0e0; /* Light gray background */
+    border-radius: 15px; /* Rounded corners */
+    overflow: hidden;
+    margin: 25px 0; /* Increased margin */
+}
+
+#progress-bar {
+    width: 0;
+    height: 30px;
+    background: #197278; /* Teal for progress */
+    border-radius: 15px; /* Rounded corners */
+    transition: width 1s ease-in-out; /* Smooth transition */
+}
+
+/* Donation QR Section */
+#donation-qr {
+    text-align: center;
+}
+
+#qr-code {
+    display: block;
+    margin: 20px auto;
+    max-width: 60%; /* Increased size for better visibility */
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+#qr-code:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+/* Account Info List */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #ffffff; /* White background for list items */
+    border-left: 5px solid #197278; /* Teal border */
+    margin: 15px 0; /* Increased margin */
+    padding: 20px; /* Increased padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 1.2em; /* Larger font */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+ul li:hover {
+    background-color: #e2e8f0; /* Light blue-gray background on hover */
+    transform: translateY(-3px); /* Hover lift effect */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 25px; /* Increased padding for balance */
+    background: linear-gradient(135deg, #283d3b, #197278); /* Gradient from dark green to teal */
+    color: #f9f7f3; /* Light gray text */
+    margin-top: 40px;
+    font-size: 1.2em; /* Larger footer text */
+    border-radius: 20px 20px 0 0; /* Rounded corners */
+}
+
+/* Responsive Design Enhancements */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.4em; /* Adjusted size for smaller screens */
+    }
+
+    section {
+        padding: 30px; /* Adjusted padding */
+    }
+
+    #qr-code {
+        max-width: 80%; /* Adjusted size */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2em; /* Further adjust for small screens */
+    }
+
+    header p {
+        font-size: 1.1em; /* Adjusted size */
+    }
+
+    section {
+        padding: 20px; /* Adjusted padding */
+    }
+
+    #qr-code {
+        max-width: 90%; /* Further adjust size */
+    }
+}
